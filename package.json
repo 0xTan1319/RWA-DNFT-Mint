@@ -1,0 +1,48 @@
+{
+  "name": "platzireto-dnft",
+  "version": "1.0.0",
+  "description": "Dynamic NFT project using Chainlink Keepers for automated metadata updates",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:goerli": "hardhat run scripts/deploy.js --network goerli",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+    "mint": "hardhat run scripts/mint.js",
+    "interact": "hardhat run scripts/interact.js",
+    "verify": "hardhat verify",
+    "coverage": "hardhat coverage"
+  },
+  "keywords": [
+    "nft",
+    "dynamic",
+    "chainlink",
+    "keepers",
+    "ethereum",
+    "solidity"
+  ],
+  "author": "Platzi Reto",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^4.3.7",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1"
+  }
+}
